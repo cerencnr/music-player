@@ -1,0 +1,38 @@
+.content-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto 1fr auto;
+    padding: 5px;
+    gap: 5px;
+    box-sizing: border-box; /* for avoiding padding: 5px make it scrollable */
+}
+
+.right-bar {
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+    background-color: #131314;
+    border-radius: 10px;
+    width: max-content;
+}
+
+.left-bar {
+    width: 150px;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+    background-color: #131314;
+    border-radius: 10px;
+}
+
+.middle-bar {
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+    background-color: #131314;
+    border-radius: 10px;
+}
+

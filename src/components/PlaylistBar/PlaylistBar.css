@@ -1,0 +1,14 @@
+.playlist-container {
+    padding: 10px 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mini-playlist {
+    height: 60px;
+    width: 60px;
+    background-color: #91b0fd;
+    box-sizing: border-box;
+    border-radius: 5px;
+}

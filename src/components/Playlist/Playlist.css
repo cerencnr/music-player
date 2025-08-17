@@ -1,0 +1,25 @@
+.gallery-item {
+    padding: 5px;
+}
+
+.gallery-item-content {
+    height: 60px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.playlist-image {
+    aspect-ratio: 1 / 1;
+    background-color: #494c5e;
+    border-radius: 5px 0 0 5px;
+}
+
+.playlist-name {
+    background-color: rgba(105, 109, 129, 0.3);
+    border-radius: 0 5px 5px 0;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    overflow: hidden;
+}
