@@ -6,8 +6,14 @@ export default function Header() {
 
     return (
       <div className="header-container">
-          <button onClick={() => navigate(-1)}>back</button>
-          <button onClick={() => navigate(1)}>forward</button>
+          <div className="header-content">
+              <button onClick={() => navigate(-1)}>
+                  <img src="/caret_left.svg" alt="caret_left" />
+              </button>
+              <button onClick={() => navigate(1)}>
+                  <img src="/caret_right.svg" alt="caret_right" />
+              </button>
+          </div>
       </div>
     );
 }

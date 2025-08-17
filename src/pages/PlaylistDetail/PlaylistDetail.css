@@ -1,0 +1,33 @@
+.playlist-detail-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.playlist-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 10px;
+    gap: 10px;
+    background-color: #202020;
+}
+
+.playlist-header-image {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background: #91b0fd;
+    border-radius: 5px;
+}
+
+.playlist-header-text {
+
+}
+
+.playlist-detail-playlist-name {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.playlist-content {
+
+}

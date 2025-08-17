@@ -1,3 +1,17 @@
 .header-container {
     height: 60px;
 }
+
+.header-content {
+    box-sizing: border-box; /* to make it fit into header-container */
+    padding: 15px;
+    height: 100%;
+}
+
+button {
+    border: none;
+    font-weight: bold;
+    height: 100%;
+    box-sizing: border-box;
+    background: none;
+}

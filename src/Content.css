@@ -2,7 +2,7 @@
     display: grid;
     height: 100%;
     grid-template-columns: auto 1fr auto;
-    padding: 5px;
+    padding: 0 5px;
     gap: 5px;
     box-sizing: border-box; /* for avoiding padding: 5px make it scrollable */
 }
