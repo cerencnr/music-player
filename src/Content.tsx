@@ -1,6 +1,6 @@
 import './Content.css'
-import Gallery from "./Gallery.tsx";
 import PlaylistBar from "./components/PlaylistBar/PlaylistBar.tsx";
+import {Outlet} from "react-router-dom";
 
 export default function Content() {
     return (
@@ -9,7 +9,7 @@ export default function Content() {
                 <PlaylistBar />
             </div>
             <div className="middle-bar">
-            <Gallery />
+                <Outlet/>
             </div>
             <div className="left-bar">
                 <div>l</div>

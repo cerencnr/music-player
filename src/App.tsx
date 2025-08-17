@@ -1,11 +1,11 @@
 import './App.css'
-import Layout from "./Layout.tsx";
+import BaseRouter from "./routes/BaseRouter.tsx";
 
 function App() {
 
   return (
     <>
-      <Layout />
+      <BaseRouter />
     </>
   )
 }

@@ -1,18 +1,23 @@
 import './Playlist.css'
-import {playlists} from "../../playlists.ts";
+import { useNavigate } from "react-router-dom";
 
-export default function Playlist() {
+interface PlaylistProps {
+    image: string;
+    name: string;
+    id: string;
+}
+
+export default function Playlist({image, name, id}: PlaylistProps) {
+    const navigate = useNavigate();
+
     return (
-        <>
-            {playlists.map((playlist) => (
-                <div className="gallery-item">
-                    <div className="gallery-item-content">
-                        <div className="playlist-image">{playlist.image}</div>
-                        <div className="playlist-name">{playlist.name}
-                        </div>
-                    </div>
-                </div>
-            ))}
-        </>
+        <div
+            className="gallery-item-content"
+            onClick={() => navigate(`/playlist/${id}`)}
+            style={{cursor: "pointer"}}
+        >
+            <div className="playlist-image">{image}</div>
+            <div className="playlist-name">{name}</div>
+        </div>
     );
 }
